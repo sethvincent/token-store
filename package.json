@@ -1,0 +1,40 @@
+{
+  "name": "token-store",
+  "version": "0.0.0",
+  "description": "store access tokens for command-line authentication",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --unused --no-dev && ncu",
+    "lint": "standard",
+    "test:no-lint": "node tests/*.js | tap-spec",
+    "test": "npm run lint && npm run test:no-lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethvincent/token-store.git"
+  },
+  "keywords": [
+    "token",
+    "auth",
+    "authentication",
+    "jwt",
+    "commandline",
+    "cli"
+  ],
+  "author": "sethvincent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethvincent/token-store/issues"
+  },
+  "homepage": "https://github.com/sethvincent/token-store#readme",
+  "devDependencies": {
+    "standard": "^8.6.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "configuration": "^0.1.1",
+    "configuration-store": "^1.0.1",
+    "store": "^1.3.20"
+  }
+}
